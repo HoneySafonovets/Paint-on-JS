@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="icon" href="./assets/Fav/favicon.ico">
+  <title>Paint on JavaScript</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <label for="color-pick-input" class="header__title">Pick a color</label>
+      <input type="color" id="color-pick-input">
+      <ul id="color-list" class="color-list"></ul>
+
+      <label for="line-width-input">Line width</label>
+      <input 
+        type="range"
+        id="line-width-input"
+        min="1"
+        max="40"
+      >
+      <ul  id="tools-list" class="tools-list"></ul>
+    </header>
+     <main class="main">
+      <canvas id="drawing-board"></canvas>
+      <div class="buttons">
+        <button id="clear-btn" class="btn">Clear</button>
+        <button id="save-btn" class="btn">Save</button>
+      </div>
+    </main>
+    <footer>
+  
+    </footer>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+</html>
